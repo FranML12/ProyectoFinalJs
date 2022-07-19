@@ -1,0 +1,26 @@
+div#cards {
+  margin: 10px;
+}
+
+header.sticky-top {
+  border: #a3a3a3 1px solid;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.cart {
+  padding-right: 20px;
+}
+
+.card-img-top {
+  height: auto;
+  width: auto;
+  max-width: 350px;
+}
+
+.card {
+  height: auto;
+  width: auto;
+  max-width: 350px;
+}
+/*# sourceMappingURL=style.css.map */
