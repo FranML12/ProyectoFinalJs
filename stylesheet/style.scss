@@ -23,3 +23,37 @@ header.sticky-top {
     width: auto;
     max-width: 350px;
 }
+
+.card {
+    margin: 0 auto;
+}
+
+.shopping-cart-items {
+    padding: 20px 0px;
+  }
+  
+  .shopping-cart-header {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .shopping-cart-image {
+    max-width: 80px;
+    border-radius: 20px;
+  }
+  
+  .shopping-cart-quantity-input {
+    max-width: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+  }
+  
+  .shopping-cart-total {
+    min-height: 96px;
+  }
+  
+  .shoppingCartTotal {
+    color: black;
+    text-decoration: none;
+}
