@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto final</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stylesheet/style.css">
+</head>
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">E-Commerce</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <!-- Sections/Pages in prcess -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <!-- Cart -->
+                <a href="#cart" class="nav-item cart">
+                  <div class="cart-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>Shopping Cart</svg>
+                  </div>
+                </a>
+                <!-- End cart -->
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+      <!-- Carrousel -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/carrousel/1-slide-1657557550817-778866567-90d11479778aac555d8865e2bf7ca64d1657557558-1920-1920.webp" alt="img1" class="d-block w-100">
+          </div>
+        <div class="carousel-item">
+            <img src="./assets/images/carrousel/1-slide-1646429013114-7761512289-f4a68cee7b96af892c43a145646d21c51646429017-1920-1920.webp" alt="img2" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+              <img src="./assets/images/carrousel/1-slide-1646429013114-7940982319-9a7cfb15bb787f4d674472e4d1cf0b401646429016-1920-1920.webp" alt="img3" class="d-block w-100">
+            </div>
+          </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- End carrousel -->
+    </main>
+    <!-- Products -->
+    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-md-center" id="cards">
+      <div class="col">
+        <div class="card">
+          <img src="./assets/images/beastars/beastars011-48dac998c3239929ed15965932130672-480-0.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Beastars 01</h5>
+            <p class="card-text card-price">$1550</p>
+            <a class="btn btn-primary addToCart">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./assets/images/beastars/beastars021-8ce0cca3cc54ea35d615995869154588-480-0.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Beastars 02</h5>
+            <p class="card-text card-price">$1550</p>
+            <a class="btn btn-primary addToCart">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./assets/images/beastars/beastars031-da0f905ec770cc9db616033079160899-480-0.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Beastars 03</h5>
+            <p class="card-text card-price">$1550</p>
+            <a class="btn btn-primary addToCart">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./assets/images/beastars/beastars041-bf0457981782d5a16016069224670692-480-0.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Beastars 04</h5>
+            <p class="card-text card-price">$1550</p>
+            <a class="btn btn-primary addToCart">Add to cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End products -->
+    <section class="shopping-cart" id="cart">
+      <div class="container">
+          <h1 class="text-center">CARRITO</h1>
+          <hr>
+          <div class="row">
+              <div class="col-6">
+                  <div class="shopping-cart-header">
+                      <h6>Producto</h6>
+                  </div>
+              </div>
+              <div class="col-2">
+                  <div class="shopping-cart-header">
+                      <h6 class="text-truncate">Precio</h6>
+                  </div>
+              </div>
+              <div class="col-4">
+                  <div class="shopping-cart-header">
+                      <h6>Cantidad</h6>
+                  </div>
+              </div>
+          </div>
+          <!-- START SHOPPING CART ITEMS -->
+          <div class="shopping-cart-items shoppingCartItemsContainer"></div>
+          <!-- END SHOPPING CART ITEMS -->
+          <!-- START TOTAL -->
+          <div class="row">
+              <div class="col-12">
+                  <div class="shopping-cart-total d-flex align-items-center">
+                      <p class="mb-0">Total</p>
+                      <p class="ml-4 mb-0 shoppingCartTotal">$0</p>
+                      <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal" data-target="#comprarModal">Comprar</button>
+                  </div>
+              </div>
+          </div>
+          <!-- END TOTAL -->
+          <!-- START MODAL COMPRA -->
+          <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                          <p>Pronto recibirá su pedido</p>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- END MODAL COMPRA -->
+        </div>
+  </section>
+  <!-- END SECTION SHOPPING CART -->
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2022 Murua, comisión 31655</p>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="./script/index.js"></script>
+</body>
+</html>

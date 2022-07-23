@@ -1,59 +1,56 @@
 div#cards {
-    margin: 10px;  
+  margin: 10px;  
 } 
 
 header.sticky-top {
-    border: rgb(163, 163, 163) 1px solid;
-    max-height: 100%;
-    max-width: 100%;
+  border: rgb(163, 163, 163) 1px solid;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .cart {
-    padding-right: 20px;
+  padding-right: 20px;
 }
 
 .card-img-top {
-    height: auto;
-    width: auto;
-    max-width: 350px;
+  height: auto;
+  width: auto;
+  max-width: 350px;
 }
 
 .card {
-    height: auto;
-    width: auto;
-    max-width: 350px;
-}
-
-.card {
-    margin: 0 auto;
+  height: auto;
+  width: auto;
+  max-width: 350px;
+  margin: 0 auto;
 }
 
 .shopping-cart-items {
-    padding: 20px 0px;
-  }
+  padding: 20px 0px;
+}
   
-  .shopping-cart-header {
-    border-bottom: 1px solid #ccc;
-  }
+.shopping-cart-header {
+  border-bottom: 1px solid #ccc;
+}
   
-  .shopping-cart-image {
-    max-width: 80px;
-    border-radius: 20px;
-  }
+.shopping-cart-image {
+  max-width: 80px;
+  border-radius: 20px;
+}
+
+.shopping-cart-quantity-input {
+  max-width: 45px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #eee;
+  padding: 5px;
+}
   
-  .shopping-cart-quantity-input {
-    max-width: 45px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background: #eee;
-    padding: 5px;
-  }
+.shopping-cart-total {
+  min-height: 96px;
+}
   
-  .shopping-cart-total {
-    min-height: 96px;
-  }
-  
-  .shoppingCartTotal {
-    color: black;
-    text-decoration: none;
+.shoppingCartTotal {
+  color: black;
+  text-decoration: none;
 }

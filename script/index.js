@@ -3,8 +3,11 @@ addToShoppingCartButtons.forEach((addToCartButton) => {
 	addToCartButton.addEventListener('click', addToCartClicked);
 });
 
-const shoppingCartItemsContainer = document.querySelector('.shoppingCartItemsContainer');
+const comprarButton = document.querySelector('.comprarButton');
+comprarButton.addEventListener('click', comprarButtonClicked);
 
+const shoppingCartItemsContainer = document.querySelector('.shoppingCartItemsContainer');
+//Add to cart button
 function addToCartClicked(event) {
 	const button = event.target;
 	const card = button.closest('.card');
@@ -15,7 +18,25 @@ function addToCartClicked(event) {
 
 	addItemToShoppingCart(cardTitle, cardPrice, cardImg);
 }
- function addItemToShoppingCart(cardTitle, cardPrice, cardImg){
+
+//Add to cart HTML
+function addItemToShoppingCart(cardTitle, cardPrice, cardImg){
+	const elementsTitle = shoppingCartItemsContainer.getElementsByClassName(
+		'shoppingCartItemTitle'
+	);
+	for (let i = 0; i < elementsTitle.length; i++) {
+		if (elementsTitle[i].innerText === cardTitle) {
+		  let elementQuantity = elementsTitle[
+			i
+		  ].parentElement.parentElement.parentElement.querySelector(
+			'.shoppingCartItemQuantity'
+		  );
+		  elementQuantity.value++;
+		  updateShoppingCartTotal();
+		  return;
+		}
+	}
+
 	const shoppingCartRow = document.createElement('div');
 	const shoppingCartContent = `
 	<div class="row shoppingCartItem">
@@ -38,12 +59,20 @@ function addToCartClicked(event) {
 			</div>
 		</div>
 	</div>`;
-	shoppingCartRow.innerHTML = shoppingCartContent
-	shoppingCartItemsContainer.append(shoppingCartRow)
-
-	updateShoppingCartTotal()
+	shoppingCartRow.innerHTML = shoppingCartContent;
+	shoppingCartItemsContainer.append(shoppingCartRow);
+  
+	shoppingCartRow
+	  .querySelector('.buttonDelete')
+	  .addEventListener('click', removeShoppingCartItem);
+  
+	shoppingCartRow
+	  .querySelector('.shoppingCartItemQuantity')
+	  .addEventListener('change', quantityChanged);
+  
+	updateShoppingCartTotal();
 }
-
+//Shoping cart total value ($)
 function updateShoppingCartTotal(){
 	let total = 0;
 	const shoppingCartTotal = document.querySelector('.shoppingCartTotal');
@@ -57,4 +86,21 @@ function updateShoppingCartTotal(){
 		total = total + shoppingCartItemPrice * shoppingCartItemQuantity;
 	});
 	shoppingCartTotal.innerHTML = `$${total.toFixed(0)}`;
+}
+
+function removeShoppingCartItem(event) {
+	const buttonClicked = event.target;
+	buttonClicked.closest('.shoppingCartItem').remove();
+	updateShoppingCartTotal();
+}
+  
+function quantityChanged(event) {
+	const input = event.target;
+	input.value <= 0 ? (input.value = 1) : null;
+	updateShoppingCartTotal();
+}
+  
+function comprarButtonClicked() {
+	shoppingCartItemsContainer.innerHTML = '';
+	updateShoppingCartTotal();
 }
