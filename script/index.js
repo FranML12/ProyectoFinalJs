@@ -1,3 +1,5 @@
+swal.fire('Bienvenido a mi E-commerce!');
+
 const addToShoppingCartButtons = document.querySelectorAll('.addToCart');
 addToShoppingCartButtons.forEach((addToCartButton) => {
 	addToCartButton.addEventListener('click', addToCartClicked);
@@ -104,3 +106,15 @@ function comprarButtonClicked() {
 	shoppingCartItemsContainer.innerHTML = '';
 	updateShoppingCartTotal();
 }
+
+let botonSwal = document.getElementById("btnCompra");
+
+botonSwal.addEventListener("click", () => {
+  Swal.fire({
+    title: "Listo!",
+    text: "Comprado con exito",
+    icon: "success",
+    confirmButtonText: "ok",
+  });
+});
+ 
