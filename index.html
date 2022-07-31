@@ -4,24 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logueo index</title>
+    <title>Iniciar sesión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./stylesheet/style.css">
 </head>
 <body>
-    <header class="headerLoguin">
+    <header class="headerLogin">
         <form action="">
+            <label for="user" class="col-form-label">Usuario</label>
             <input type="text" id="user" placeholder="Ingrese su usuario">
+            <label for="password" class="col-form-label">Contraseña</label>
             <input type="password" id="password" placeholder="Ingrese la contraseña">
-            <a href="./commerce.html" id="save">ENVIAR</a>
-            <input type="reset" id="reset" class="boton">
+            <a href="./pages/commerce.html" class="btn btn-primary" id="save">ENVIAR</a>
+            <input type="reset" id="reset" class="boton btn btn-secondary">
         </form>
     </header>
     <main>
 
     </main>
     <footer>
-
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2022 Murua, comisión 31655</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="./script/sesion.js"></script>
 </body>
 </html>

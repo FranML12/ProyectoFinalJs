@@ -54,4 +54,10 @@ header.sticky-top {
   color: black;
   text-decoration: none;
 }
+
+.headerLogin {
+  margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 /*# sourceMappingURL=style.css.map */
