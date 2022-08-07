@@ -1,36 +1,43 @@
 swal.fire('Bienvenido a mi E-commerce!');
 
 const cards = document.getElementById("cards");
-
-fetch("../API/data.json")
-.then(response => response.json())
-/* .then(data => console.log(data)); */
-.then(products =>{
-    products.forEach(product => {
-        const card = document.createElement("div");
-        card.innerHTML = `
-        <div class="col">
-        <div class="card">
-          <img src="${product.image}" class="card-img-top beastars01" alt="${product.name}">
-          <div class="card-body text-center">
-            <h5 class="card-title">${product.name}</h5>
-            <p class="card-text card-price">${product.price}</p>
-            <a class="btn btn-primary addToCart">Add to cart</a>
-          </div>
-        </div>
-      </div>
-        `;
-
-        cards.append(card);
-    });
-})
-
-const addToShoppingCartButtons = document.querySelectorAll('.addToCart');
-addToShoppingCartButtons.forEach((addToCartButton) => {
-	addToCartButton.addEventListener('click', addToCartClicked);
-});
+let components = [];
+const fetchS = async() => {
+	const response = await fetch("../API/data.json");
+	components = await response.json();
+	console.log(components);
+	componentsRender(components);
+}
+fetchS();
+const componentsRender = (products) => {
+	for (let productZ of products){
+		const card = document.createElement("div");
+		card.innerHTML = `
+		<div class="col">
+		<div class="card">
+		  <img src="${productZ.image}" class="card-img-top beastars01" alt="${productZ.name}">
+		  <div class="card-body text-center">
+			<h5 class="card-title">${productZ.name}</h5>
+			<p class="card-text card-price">${productZ.price}</p>
+			<a class="btn btn-primary addToCart">Add to cart</a>
+		  </div>
+		</div>
+	  </div>
+		`;
+	
+		cards.append(card);
+	}
+	buttons();
+}
+const buttons = () => {
+	const addToShoppingCartButtons = document.querySelectorAll('.addToCart');
+	addToShoppingCartButtons.forEach((addToCartButton) => {
+		addToCartButton.addEventListener('click', addToCartClicked);
+	});
+}
 
 const comprarButton = document.querySelector('.comprarButton');
+
 comprarButton.addEventListener('click', comprarButtonClicked);
 
 const shoppingCartItemsContainer = document.querySelector('.shoppingCartItemsContainer');
