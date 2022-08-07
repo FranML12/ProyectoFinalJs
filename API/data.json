@@ -3,42 +3,66 @@
         "name": "Beastars 01",
         "price": "$1550",
         "id": "1",
-        "image": "../assets/images/beastars/beastars011-48dac998c3239929ed15965932130672-480-0.jpg"
+        "image": "../assets/images/beastars/beastars01.jpg"
     },
     {
         "name": "Beastars 02",
         "price": "$1550",
         "id": "2",
-        "image": "../assets/images/beastars/beastars021-8ce0cca3cc54ea35d615995869154588-480-0.jpg"
+        "image": "../assets/images/beastars/beastars02.jpg"
     },
     {
         "name": "Beastars 03",
         "price": "$1550",
         "id": "3",
-        "image": "../assets/images/beastars/beastars031-da0f905ec770cc9db616033079160899-480-0.jpg"
+        "image": "../assets/images/beastars/beastars03.jpg"
     },
     {
         "name": "Beastars 04",
         "price": "$1550",
         "id": "4",
-        "image": "../assets/images/beastars/beastars041-bf0457981782d5a16016069224670692-480-0.jpg"
+        "image": "../assets/images/beastars/beastars04.jpg"
     },
     {
         "name": "Beastars 05",
         "price": "$1550",
         "id": "5",
-        "image": "../assets/images/beastars/beastars051-38a15b58a2fd4a9cfe16123633068301-480-0.jpg"
+        "image": "../assets/images/beastars/beastars05.jpg"
     },
     {
         "name": "Beastars 06",
         "price": "$1550",
         "id": "6",
-        "image": "../assets/images/beastars/beastars061-ff36553a5098267e3816165083557410-480-0.jpg"
+        "image": "../assets/images/beastars/beastars06.jpg"
     },
     {
         "name": "Beastars 07",
         "price": "$1550",
         "id": "7",
-        "image": "../assets/images/beastars/beastars071-c812f3784941eeba8616200753974693-480-0.jpg"
+        "image": "../assets/images/beastars/beastars07.jpg"
+    },
+    {
+        "name": "Beastars 08",
+        "price": "$1550",
+        "id": "8",
+        "image": "../assets/images/beastars/beastars08.jpg"
+    },
+    {
+        "name": "Beastars 09",
+        "price": "$1550",
+        "id": "9",
+        "image": "../assets/images/beastars/beastars09.jpg"
+    },
+    {
+        "name": "Beastars 10",
+        "price": "$1550",
+        "id": "10",
+        "image": "../assets/images/beastars/beastars10.jpg"
+    },
+    {
+        "name": "Beastars 11",
+        "price": "$1550",
+        "id": "11",
+        "image": "../assets/images/beastars/beastars11.jpg"
     }
 ]
