@@ -132,7 +132,7 @@ botonSwal.addEventListener("click", () => {
     icon: "success",
     confirmButtonText: "ok",
   });
-  shoppingCartItemsContainer.remove();
+  shoppingCartItemsContainer.innerHTML = "";
   cart.splice(0,12);
   localStorage.setItem('cart',JSON.stringify(cart))
   cargarTotal();

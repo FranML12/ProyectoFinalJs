@@ -11,11 +11,10 @@
 <body>
     <header class="headerLogin">
         <form action="">
-            <label for="user" class="col-form-label">Usuario</label>
-            <input type="text" id="user" placeholder="Ingrese su usuario">
-            <label for="password" class="col-form-label">Contraseña</label>
-            <input type="password" id="password" placeholder="Ingrese la contraseña">
-            <a href="./pages/commerce.html" class="btn btn-primary" id="save">ENVIAR</a>
+            <input type="text" id="user" class="col-form-label" placeholder="Ingrese su usuario">
+            <input type="password" id="password" class="col-form-label" placeholder="Ingrese la contraseña">
+            <button href="./pages/commerce.html" id="save" class="btn-primary">Iniciar Sesión</button>
+            <button id="createUsers" class="boton btn btn-secondary">CREAR USUARIO</button>
             <input type="reset" id="reset" class="boton btn btn-secondary">
         </form>
     </header>
@@ -32,6 +31,7 @@
         </ul>
         <p class="text-center text-muted">© 2022 Murua, comisión 31655</p>
     </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="./script/index.js"></script>
 </body>
